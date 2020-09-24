@@ -1,0 +1,36 @@
+.assosiate .card {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+
+.assosiate .card-contain {
+    background-color: rgb(40, 116, 240, 0.1);
+    border-radius: 10px 0 0 10px;
+}
+
+.assosiate .card-contain p {
+    text-align: justify;
+    padding: 23px;
+    color: black;
+    line-height: 26px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.assosiate .card-form {
+    padding: 15px;
+}
+
+.assosiate .card-form label{
+    color: #2874f0;
+}
+.assosiate .card-form legend{
+    color: #2874f0;
+    font-weight: 700;
+}
+
+.assosiate .card-form .asteriskField {
+    color: #e31e24;
+    margin-left: 4px;
+    font-size: 18px;
+}

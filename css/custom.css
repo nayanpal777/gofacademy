@@ -1,0 +1,865 @@
+/*----------------------------------------------------------------------------------
+# Services ****************************************************************
+------------------------------------------------------------------------------------*/
+.services {
+  background: white;
+}
+
+.services .tabs {
+  padding: 5px 2px 0px 6px;
+  margin: 0 auto 20px auto;
+  list-style: none;
+  text-align: center;
+  border: 2px solid #2874f0;
+  border-radius: 27px;
+  background: white;
+  box-shadow: 3px 3px 11px 0px rgba(15, 98, 140, 0.3);
+}
+
+.services .tabs li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px 15px 10px 15px;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  color: black;
+  margin-bottom: 5px;
+  transition: all 0.3s easetitle-in-out;
+  border-radius: 20px;
+  margin-left: 6px;
+}
+
+.services .tabs li:hover,
+.services .tabs li.active {
+  color: white;
+  background: #0f628c;
+}
+.services .section-title h2,
+.services .section-title p {
+  color: #2874f0;
+}
+
+.services .section-title h2::after {
+  background: rgba(0, 0, 0);
+}
+
+.services .icon-box {
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  transition: all 0.3s;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0px 2px 12px rgba(15, 98, 140, 0.3);
+}
+.services .icon-box .icon-box-title {
+  height: 60px;
+}
+.services .icon-box .icon-box-title h4 {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Rubik", sans-serif;
+  color: #1c478d;
+}
+.services .icon-box .class-heading {
+  height: 20px;
+}
+.services .icon-box .class-heading h5 {
+  text-align: left;
+  color: #0c7082;
+  font-weight: bold;
+  font-family: initial;
+  font-size: 20px;
+}
+.services .icon-box:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 2px 12px rgba(15, 98, 140, 0.8);
+}
+
+.services .icon-box .flip-card {
+  background-color: transparent;
+  width: 100%;
+  perspective: 1000px;
+}
+
+.services .icon-box .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 170px;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.services .icon-box .flip-card:hover .flip-card-inner {
+  transform: rotateX(180deg);
+}
+.services .icon-box .flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.services .icon-box .flip-card-front {
+  background-color: white;
+  color: black;
+}
+.services .icon-box .flip-card-front img {
+  position: absolute;
+  top: -15px;
+  right: 0;
+  width: 125px;
+  height: auto;
+  box-sizing: border-box;
+}
+.services .icon-box .flip-card-back {
+  background-color: white;
+  color: black;
+  transform: rotateX(180deg);
+  height: 105%;
+}
+.services .icon {
+  margin-bottom: 15px;
+}
+
+.services .title {
+  font-weight: 700;
+  font-size: 18px;
+}
+.services .title p {
+  color: white;
+  padding: 4px;
+  background-color: #5bc427;
+  display: inline;
+  border: 1px solid #5bc427;
+  border-radius: 15px;
+  margin: -16px -51px;
+  font-size: 10px;
+
+  position: absolute;
+}
+
+@media (max-width: 991px) {
+  .services .title p {
+    margin: -20px -32px;
+  }
+  .services .icon-box {
+    padding: 28px;
+  }
+}
+@media (max-width: 991px) {
+  .services .title p {
+    margin: -20px -32px;
+  }
+  .services .icon-box {
+    padding: 28px;
+  }
+}
+.services .title a {
+  color: #2d405f;
+  transition: 0.3s;
+}
+
+.services .title a:hover {
+  color: #4e6fa4;
+}
+
+.services .description {
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 0;
+  text-align: left;
+  font-weight: 600;
+}
+.services .icon-box .flip-card .flip-card-inner .flip-card-front h5 {
+  text-align: left;
+  color: #0f628c;
+  font-size: 22px;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+}
+.services .icon-box .flip-card .flip-card-inner .flip-card-front h4 {
+  text-align: left;
+  font-size: 18px;
+  color: #1c478d;
+  font-weight: bold;
+  font-family: "Rubik", sans-serif;
+  text-decoration: underline;
+  text-underline-position: auto;
+}
+
+.services .icon-box .flip-card .flip-card-inner .flip-card-back ul {
+  text-align: left;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 600;
+}
+.services .icon-box .flip-card .flip-card-inner .flip-card-back ul li {
+  list-style: disc;
+  color: #1c478d;
+}
+.services .icon-box .flip-card .flip-card-inner .flip-card-front ul {
+  text-align: left;
+  font-size: 15px;
+  line-height: 23px;
+  font-weight: bold;
+  margin-left: -20px;
+}
+.services .icon-box .flip-card .flip-card-inner .flip-card-front ul li {
+  list-style: disc;
+  color: #1c478d;
+  font-weight: 700;
+  font-family: unset;
+  letter-spacing: 1px;
+}
+
+.services .icon-box .flip-card .flip-card-inner .flip-card-back .card-back-contain {
+  width: 107%;
+  background: white;
+}
+.services .icon-box .cardfooter {
+  height: 35px;
+}
+
+/*----------------------------------------------------------------------------------
+# SignIn button ****************************************************************
+------------------------------------------------------------------------------------*/
+.signIn-btn {
+  background: aliceblue;
+  color: #2874f0;
+  border-radius: 30px;
+  padding: 8px 15px 10px 15px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  display: inline-block;
+  font-weight: 600;
+  font-family: "Krub", sans-serif;
+  letter-spacing: 0.5px;
+  border: 1px solid #ccc;
+  box-shadow: 3px 3px 7px 0px rgba(40, 116, 240, 0.2);
+}
+
+.signIn-btn:hover {
+  background: #2874f0;
+  color: #fff;
+  box-shadow: 3px 3px 7px 0px rgba(40, 116, 240, 0.7);
+}
+
+@media (max-width: 768px) {
+  .signIn-btn {
+    padding: 6px 18px;
+  }
+}
+
+/*----------------------------------------------------------------------------------
+# live Classes Form Design ****************************************************************
+------------------------------------------------------------------------------------*/
+.contact .form-section {
+  box-shadow: 0 0 30px rgba(15, 98, 140, 0.2);
+  padding: 30px;
+  background: #fff;
+}
+.contact input::placeholder {
+  font-size: 17px;
+}
+
+.contact .form-section input,
+.contact .form-section textarea {
+  border-radius: 5px;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.contact .form-section input:focus,
+.contact .form-section textarea:focus {
+  border-color: #8ea5ca;
+}
+
+.contact .form-section input {
+  padding: 20px 15px;
+}
+
+.contact .form-section button[type="submit"] {
+  background: #2874f0;
+  border: 1px solid #2874f0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 5px;
+}
+
+.contact .form-section button[type="submit"]:hover {
+  background: white;
+  color: #2874f0;
+  border: 1px solid #2874f0;
+}
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*--------------------------------------------------------------
+# Form Design *****************************************************
+--------------------------------------------------------------*/
+
+.form {
+  box-shadow: 0 0 30px rgba(15, 98, 140, 0.3);
+  padding: 30px;
+  background: #fff;
+  border: 1px solid white;
+  border-radius: 10px;
+  height: 380px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.form button {
+  background: #0f628c;
+  border: 1px solid #0f628c;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 5px;
+}
+
+.form button:hover {
+  background: #fff;
+  color: #0f628c;
+  border: 1px solid #0f628c;
+}
+
+/*--------------------------------------------------------------
+# Footer *****************************************************
+--------------------------------------------------------------*/
+.footer {
+  color: #444444;
+  font-size: 14px;
+  background: #006dad;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.6);
+}
+
+.footer .footer-top {
+  background: #0073b7;
+}
+
+.footer .footer-top .logo img {
+  background-color: white;
+  padding: 10px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  height: auto;
+}
+.footer .footer-top .footer-contact {
+  margin-bottom: 30px;
+}
+
+.footer .footer-top .footer-contact h4 {
+  font-size: 15px;
+  margin: 15px 0 6px 0;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  color: white;
+}
+
+.footer .footer-top .footer-contact p {
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-family: "Krub", sans-serif;
+  color: white;
+}
+
+.footer .footer-top h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.footer .footer-top .footer-links {
+  margin-bottom: 30px;
+}
+
+.footer .footer-top .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer .footer-top .footer-links ul i {
+  padding-right: 2px;
+  color: white;
+  font-size: 15px;
+  line-height: 1;
+}
+
+.footer .footer-top .footer-links ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.footer .footer-top .footer-links ul li:first-child {
+  padding-top: 0;
+}
+
+.footer .footer-top .footer-links ul a {
+  color: white;
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+  margin-left: 5px;
+}
+.footer .footer-top .footer-links ul a:hover {
+  text-decoration: none;
+  color: #00ffff;
+}
+
+.footer .com {
+  padding-top: 5px;
+  font-size: 13px;
+  color: white;
+}
+
+.footer .footer-top .social-links a {
+  margin-left: 10px;
+  line-height: 10px;
+}
+
+.footer .footer-top .social-links a .fa-facebook {
+  color: #ffffff;
+  background: #1d65e8;
+  border-radius: 50%;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  font-size: 18px;
+}
+.footer .footer-top .social-links a .fa-facebook:hover {
+  transform: scale(1.1);
+}
+
+.footer .footer-top .social-links a .fa-twitter {
+  color: #ffffff;
+  background: #18bbea;
+  border-radius: 50%;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.footer .footer-top .social-links a .fa-twitter:hover {
+  transform: scale(1.1);
+}
+
+.footer .footer-top .social-links a .fa-google {
+  color: #ffffff;
+  background: #db4437;
+  border-radius: 50%;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.footer .footer-top .social-links a .fa-google:hover {
+  transform: scale(1.1);
+}
+
+.footer .footer-top .social-links a .fa-youtube {
+  color: #ffffff;
+  background: #db4437;
+  border-radius: 50%;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.footer .footer-top .social-links a .fa-youtube:hover {
+  transform: scale(1.1);
+}
+
+.footer .footer-top .about-us p {
+  color: white;
+  font-size: 15px;
+  text-align: left;
+  font-weight: 500;
+}
+
+/************************
+  payment page Css
+**************************/
+.payment-section {
+  background: #f7f7f7;
+  padding: 60px;
+}
+
+.payment-section .title h2 {
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.card {
+  box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.1) !important;
+}
+.card:hover {
+  box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.2) !important;
+}
+
+.payment-section .box-text {
+  position: absolute;
+  bottom: 0;
+  width: 95%;
+}
+
+.payment-section .box-text h4 {
+  color: black;
+  font-size: 16px;
+  text-align: justify;
+  line-height: 25px;
+  font-weight: 400;
+}
+
+.payment-section .card p {
+  color: black;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 0.1rem;
+}
+.payment-section .card .badge-success {
+  font-size: 15px;
+}
+.payment-section .card .btn-primary {
+  background-image: linear-gradient(45deg, rgb(33, 150, 243) 30%, rgb(33, 203, 243) 90%);
+  border: 1px solid #2874f0;
+  width: 70%;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: 900;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+.payment-section .card .btn-primary:hover {
+  background-image: linear-gradient(45deg, rgb(32 134 215) 30%, rgb(31 183 219) 90%);
+  border: 1px solid #2874f0;
+  width: 70%;
+  color: #fff;
+  border-radius: 20px;
+}
+.payment-section .card .btn-danger {
+  border-radius: 18px;
+  font-weight: 700;
+  padding: 4px 14px 5px 14px;
+  background: white;
+  color: #dc3545;
+}
+
+.payment-section .card .btn-danger:hover {
+  background: #dc3545;
+  color: #fff;
+}
+
+.contain {
+  margin-top: -30px;
+}
+.contain .contain-box {
+  background: white;
+  color: black;
+  border-radius: 10px;
+}
+
+.contain .card {
+  line-height: 5px;
+}
+.contain .title h3 {
+  color: #2874f0;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.contain .card .badge-success {
+  font-size: 16px;
+}
+
+.contain .contain-points ul {
+  line-height: 30px;
+  list-style-image: url("../img/correct.png");
+  font-weight: 600;
+  font-size: 16px;
+  margin-left: 30px;
+}
+
+/*----------------------------------------------------------------------------------
+# Meet Our Expert Instructors ****************************************************************
+------------------------------------------------------------------------------------*/
+.mentors {
+  padding: 30px;
+  /* background-image: url('../img/wave/wave3.svg');
+  background-size: cover; */
+  background-color: #f9f9f9;
+}
+.mentors .section-title {
+  text-align: center;
+}
+
+.mentors .section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  padding-bottom: 20px;
+  position: relative;
+  color: #2874f0;
+}
+
+.mentors .section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #2874f0;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+
+@media screen and (max-width: 768px) {
+  .payment-section {
+    padding: 0;
+    background-color: #fff;
+  }
+  .payment-section .title h2 {
+    margin-top: 40px;
+    font-size: 22px;
+  }
+  .payment-section .box-text {
+    position: relative;
+    width: 100%;
+  }
+  .payment-section .card {
+    margin-bottom: 20px;
+  }
+  .payment-section .card p {
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 0.3rem;
+  }
+  .payment-section .card .badge-success {
+    font-size: 13px;
+  }
+  .payment-section .card .btn-danger {
+    margin-top: 10px;
+  }
+  .mentors .section-title h2 {
+    font-size: 19px;
+  }
+  .contain {
+    margin-top: 0px;
+  }
+}
+
+/*---------------------------------------------------------------------------------- 
+    Career Css ****************************************************************
+------------------------------------------------------------------------------------*/
+.career {
+  padding: 60px;
+}
+.career .contact-title {
+  text-align: center;
+  padding: 60px;
+}
+
+.career .contact-title h2 {
+  font-size: 50px;
+  color: white;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.career .contact-title h4 {
+  font-size: 22px;
+  color: white;
+  font-weight: 400;
+  line-height: 33px;
+}
+
+.career .card h1 {
+  color: #2874f0;
+  font-size: 30px;
+  font-weight: 500;
+}
+.tnumber #program-lists {
+  list-style: none;
+  text-align: center;
+  border-radius: 30px;
+  background-color: whitesmoke;
+  border: 1px solid whitesmoke;
+  padding: 16px 20px 7px;
+}
+.tnumber #program-lists li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0px 20px;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #2874f0;
+  transition: all 0.3s ease-in-out;
+  border-radius: 3px;
+}
+.tnumber #program-lists li p {
+  font-size: 15px;
+  color: black;
+  margin-top: 10px;
+  font-weight: 800;
+}
+.career .card .card-btn a {
+  background: #2874f0;
+  padding: 10px 30px;
+  border: 1px solid #2874f0;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+.career .card .card-btn a:hover {
+  background: #fff;
+  color: #2874f0;
+  border: 1px solid #2874f0;
+}
+
+.jobsection .title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  text-align: center;
+  color: #2874f0;
+}
+
+.jobsection .title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: gray;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+
+.jobsection .card h2 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.jobsection .card a {
+  background-image: linear-gradient(160deg, #2874f0 33%, #000000 100%);
+  border: 1px solid #2874f0;
+  border-radius: 30px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.jobsection .card a:hover {
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.6);
+}
+
+.jobsection .jobsection-wrap {
+  transition: 0.5s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.jobsection .jobsection-wrap img {
+  transition: all ease-in-out 0.5s;
+}
+
+.jobsection .jobsection-wrap:hover img {
+  transform: scale(1.1);
+}
+
+.contain p {
+  font-size: 16px;
+  text-align: justify;
+  font-weight: 600;
+}
+
+.career #program-lists {
+  list-style: none;
+  text-align: center;
+  border-radius: 50px;
+  background-color: #f2f3f4;
+  padding: 30px;
+  margin-bottom: -2rem;
+}
+.career #program-lists li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #2874f0;
+  transition: all 0.3s ease-in-out;
+  border-radius: 0px;
+}
+.career #program-lists .active {
+  background: #2874f0;
+  color: #fff;
+  border-radius: 20px;
+}
+
+label {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.form-group .required:after {
+  content: "*";
+  color: red;
+}
+
+.form-section .card {
+  box-shadow: -3px -3px 12px 0px rgba(0, 0, 0, 0.1);
+}
+.form-section .card:hover {
+  box-shadow: -3px -3px 12px 0px rgba(40, 116, 240, 0.3);
+}

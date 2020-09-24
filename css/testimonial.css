@@ -1,0 +1,96 @@
+/* testimonial section */
+.main-testimonial {
+    background:#34347C;
+}
+
+.main-testimonial .testimonial-title h2{
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #fff;
+}
+
+.main-testimonial .testimonial-title h2::after{
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: white;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+
+.testimonials{
+    /* margin: 0 15px; */
+    box-sizing: content-box;
+    padding: 20px 20px 20px 20px;
+    margin: 30px 15px;
+    text-align: center;
+    min-height: 200px;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.8);
+    background: #fff;
+    border-radius: 15px;
+}
+.testimonials .testimonial-profile{
+    float: left;
+    width: 27%;
+    border: 2px solid #0f628c;
+    border-radius: 50%;
+}
+.testimonials .testimonial-profile img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.testimonials .testimonial-content{
+    padding-left: 30%;
+}
+.testimonials .testimonial-title{
+    margin-bottom:0;
+}
+.testimonials .testimonial-title a{
+    font-size:15px;
+    color: black;
+    letter-spacing:3px;
+    display: block;
+    text-transform: uppercase;
+    margin-bottom:4px;
+}
+.testimonials .testimonial-post{
+    display:block;
+    color: black;
+    margin-bottom:10px;
+}
+.testimonials .testimonial-post:after{
+    content:"";
+    width:100%;
+    display: block;
+    margin:10px 0 auto;
+    border-top:1px solid #4595dc;
+}
+.testimonials .testimonial-description{
+    color:black;
+    font-size: 15px;
+    line-height:23px;
+    text-align: left;
+}
+
+@media only screen and (max-width: 767px) {
+    .testimonials{
+        text-align: center;
+        padding-bottom: 5px;
+    }
+    .testimonials .testimonial-content{
+        padding: 0;
+    }
+    .testimonials .testimonial-profile{
+        float:none;
+        width: 30%;
+        margin: 5px auto;
+        padding: 0;
+    }
+}

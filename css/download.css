@@ -1,0 +1,91 @@
+.allexam {
+    background-image: url("../img/wave/122.svg");
+    margin-top: 60px;
+    background-size: cover;
+}
+
+.allexam h1 {
+    color: #fff;
+    font-size: 45px;
+    text-align: center;
+}
+.allexam h2 {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.allexam .card{
+    border: none;
+    box-shadow: none;
+}
+
+.box .card{
+    background-color: rgb(40, 116, 240, 0.06);
+    border: none;
+    border-left: 5px solid #2874f0;
+    box-shadow: 2px 4px 5px 1px rgb(40, 116, 240,0.2) !important;
+    transition: .4s;
+}
+.box .card:hover{
+    box-shadow: 2px 4px 5px 1px rgb(40, 116, 240,0.4) !important;
+    transform: translateY(-2.5px);
+}
+
+.downloads{
+    margin-top: 60px;
+    background-image: url('../img/wave/career_wave.svg');
+    background-repeat: no-repeat;
+}
+
+.downloads .contain-section a{
+    text-decoration: underline;
+    color: blue;
+    font-size: 18px;
+}
+
+.downloads .contain-section a:hover{
+    text-decoration: none;
+}
+.downloads .contain-section .paper h2{
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+}
+.downloads .contain-section h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+.downloads .contain-section h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: black;
+}
+.downloads .contain-section p{
+    text-align: justify;
+}
+.downloads .contain-section ul{
+    padding-left: 20px;
+}
+
+.downloads .contain-section ul li{
+    list-style: disc;
+}
+
+.downloads .contain-section h3{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.downloads .contain-section .paper .card{
+    border: 1px solid #2874f0;
+}
+
+.downloads .contain-box .card{
+    border-top: 5px solid #2874f0;
+    border-radius: 10px;
+}
