@@ -25,24 +25,22 @@
     <link rel="shortcut icon" href="/static/front/assets/img/favicon.png">
     <link rel="canonical" href="https://gofacademy.in/" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli%7CRubik:400,400i,500,700">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/custom.css">
-    <link rel="stylesheet" href="css/testimonial_main.css">
-    <link rel="stylesheet" href="css/exam-section.css">
-    <link rel="stylesheet" href="css/download.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/custom.css">
+    <link rel="stylesheet" href="../css/testimonial_main.css">
+    <link rel="stylesheet" href="../css/download.css">
+    <link rel="stylesheet" href="./style.css">
+
     <!-- include extra style -->
 </head>
 
 <body>
     <header class="fixed-top">
-
         <div class="container-fluid">
-
             <nav>
-
                 <div class="menu-icons">
                     <i class="fa fa-bars"></i>
                     <i class="fa fa-times"></i>
@@ -92,86 +90,68 @@
         </div>
     </header>
     <!-- Header End -->
-    <section class="allexam p-5">
+
+
+
+    <section class="allexam p-5 mb-4">
         <div class="container">
-            <h1>Previous Year Question Papers & Model Test Paper</h1>
+            <h1><u>Joint Entrance Examination (Main)</u> </h1>
+            <br>
+            <h1>12 April 2019 shift 2</h1>
         </div>
     </section>
-    <section class="box mt-5">
+    <section class="pdf-section p-3">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
-                    <a href="download/jeemain.html">
-                        <div class="card p-3">
-                            <h5>JEE Mains</h5>
+                <div class="col-md-9">
+                    <div class="top-bar">
+                        <div class="">
+                            <button class="btn btn-primary" id="prev">Previous</button>
+                            <span class="page-info">
+                                Page <span id="page-num"></span> of <span id="page-count"></span>
+                            </span>
+                            <button class="btn btn-primary" id="next">Next</button>
+                            <div class="float-right">
+                                <button class="btn btn-success">Download PDF</button>
+                            </div>
                         </div>
-                    </a>
+                    </div>
+                    <div class="pdf">
+                        <canvas id="pdf-render"></canvas>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <a href="download/jeeAdvance.html">
-                        <div class="card p-3">
-                            <h5>JEE Advanced</h5>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="download/neet.html">
-                        <div class="card p-3">
-                            <h5>NEET</h5>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="row mt-4">
-                <div class="col-md-4">
-                    <a href="#">
-                        <div class="card p-3">
-                            <h5>KVPY</h5>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="#">
-                        <div class="card p-3">
-                            <h5>NTSE</h5>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="#">
-                        <div class="card p-3">
-                            <h5>JSTSE</h5>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="row mt-4">
-                <div class="col-md-4">
-                    <a href="#">
-                        <div class="card p-3">
-                            <h5>CBSE Science (Class XI and XII)</h5>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="#">
-                        <div class="card p-3">
-                            <h5>CBSE Commerce (Class XI and XII)</h5>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="#">
-                        <div class="card p-3">
-                            <h5>CBSE (Class VI to X)</h5>
-                        </div>
-                    </a>
+                <div class="col-md-3">
+                    <div class="card p-3">
+                        <a href="#">10 April 2019 shift 2</a>
+                        <a href="#">10 April 2019 shift 2</a>
+                        <a href="#">9 April 2019 shift 2</a>
+                        <a href="#">9 April 2019 shift 1</a>
+                        <a href="#">8 April 2019 shift 2</a>
+                        <a href="#">8 April 2019 shift 1</a>
+                        <a href="#">7 April 2019 shift 2</a>
+                        <a href="#">7 April 2019 shift 1</a>
+
+                        <a href="#">12 January 2019 shift 2</a>
+                        <a href="#">12 January 2019 shift 1</a>
+                        <a href="#">11 January 2019 shift 2</a>
+                        <a href="#">11 January 2019 shift 1</a>
+                        <a href="#">10 January 2019 shift 2</a>
+                        <a href="#">10 January 2019 shift 1</a>
+                        <a href="#">09 January 2019 shift 2</a>
+                        <a href="#">09 January 2019 shift 1</a>
+
+                        <a href="#">08 January 2019 shift 2</a>
+                        <a href="#">08 January 2019 shift 1</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="footer mt-5">
+
+
+
+    <footer class="footer">
         <div class="footer-top pt-5">
             <div class="container">
                 <div class="row">
@@ -303,12 +283,14 @@
         </div>
     </footer>
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/sweetalert.min.js"></script>
-    <script src="js/shop.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/sweetalert.min.js"></script>
+    <script src="../js/shop.js"></script>
+    <script src="pdf.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
