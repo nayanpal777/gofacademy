@@ -25,7 +25,7 @@
 .pdf-section .top-bar{
     position: sticky;
     top: 60px;
-    padding: 10px;
+    padding: 10px 0px;
     background-color: #fff;
 }
 .pdf-section .btn-primary{
